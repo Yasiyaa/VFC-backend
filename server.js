@@ -7,7 +7,7 @@ const app = express();
 require("dotenv").config();
 
 
-const PORT = process.env.PORT || 8070;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -36,10 +36,8 @@ app.use("/user", userRouter);
 const memberRouter = require("./routes/members.js");
 app.use("/member",memberRouter);
 
-
-
-
-
+const orderRouter = require("./routes/order.js");
+app.use("/order",orderRouter);
 
 
 

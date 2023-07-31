@@ -16,17 +16,17 @@ const orderSchema = new Schema({
   },
   items: [
     {
-      type: String,
-      required: true,
+      product: {
+        type: String,
+        required: true,
+      }
     },
   ],
-
-  price: {
+  
+  total: {
     type: Number,
   },
 });
-
-
 
 const orders = mongoose.model("orders", orderSchema);
 
