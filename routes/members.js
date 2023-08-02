@@ -10,7 +10,7 @@ router.route("/add").post(async (requst, response) => {
   const newMember = Member({
    email,
    plan,
-   trainer
+   payment
   });
 
   const add = await newMember
