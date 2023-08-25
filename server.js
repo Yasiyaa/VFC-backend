@@ -39,6 +39,11 @@ app.use("/member",memberRouter);
 const orderRouter = require("./routes/order.js");
 app.use("/order",orderRouter);
 
+const trainerRouter = require("./routes/trainers.js");
+app.use("/trainer",trainerRouter);
+
+const equipmentRouter = require("./routes/equipments.js");
+app.use("/equipment",equipmentRouter);
 
 
 

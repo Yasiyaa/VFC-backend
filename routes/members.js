@@ -5,7 +5,7 @@ const Member = require("../models/member.js");
 // insert new member to the system
 
 router.route("/add").post(async (requst, response) => {
-  const { email,plan,trainer } = requst.body;
+  const { email,plan,payment } = requst.body;
 
   const newMember = Member({
    email,

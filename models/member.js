@@ -11,7 +11,7 @@ const memberSchema = new Schema({
     plan:{
         type:String,
     },
-    trainer :{
+    payment:{
         type:String
     }
 
