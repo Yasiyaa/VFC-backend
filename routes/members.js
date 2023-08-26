@@ -26,4 +26,17 @@ router.route("/add").post(async (requst, response) => {
 });
 
 
+
+// Get the details of the member that entered
+router.route("/").get((req, res) => {
+  Member
+    .find()
+    .then((members) => {
+      res.json(members);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 module.exports = router;
