@@ -11,6 +11,9 @@ const trainerSchema = new Schema({
     about :{
         type: String,
         required: true,
+    },
+    imagePath:{
+        type: String
     }
 })
 

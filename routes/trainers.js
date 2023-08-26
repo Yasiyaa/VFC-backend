@@ -5,11 +5,12 @@ const Trainer = require("../models/trainer.js");
 // insert new member to the system
 
 router.route("/add").post(async (requst, response) => {
-  const { name,about } = requst.body;
+  const { name,about,imagePath } = requst.body;
 
   const newTrainer = Trainer({
    name,
-   about
+   about,
+   imagePath
   });
 
   const add = await newTrainer
