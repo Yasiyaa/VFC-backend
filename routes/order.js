@@ -27,4 +27,17 @@ router.route("/addNew").post(async (requst, response) => {
     });
 });
 
+
+// Get the details of the orders 
+router.route("/").get((req, res) => {
+  Order
+    .find()
+    .then((Order) => {
+      res.json(Order);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 module.exports = router;
