@@ -12,7 +12,7 @@ const trainerSchema = new Schema({
         type: String,
         required: true,
     },
-    imagePath:{
+    imagePath: {
         type: String
     }
 })

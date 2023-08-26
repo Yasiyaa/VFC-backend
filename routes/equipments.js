@@ -5,11 +5,12 @@ const Equipment = require("../models/equipment.js");
 // insert new equipment to the shop
 
 router.route("/add").post(async (requst, response) => {
-  const { name,price } = requst.body;
+  const { name,price,imagePath } = requst.body;
 
   const newEquipment = Equipment({
    name,
-   price
+   price,
+   imagePath
   });
 
   const add = await newEquipment
