@@ -22,6 +22,11 @@ const orderSchema = new Schema({
       }
     },
   ],
+
+  telephone:{
+    type: Number
+
+  },
   
   total: {
     type: Number,

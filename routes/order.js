@@ -5,14 +5,15 @@ const Order = require("../models/orders.js");
 // insert new order to the system
 
 router.route("/addNew").post(async (requst, response) => {
-  const { total, firstname, lastname, address, items } = requst.body;
+  const { total, firstname, lastname, address, items,telephone} = requst.body;
 
   const newOrder = Order({
     firstname,
     lastname,
     address,
     items,
-    total
+    total,
+    telephone
   });
 
   const add = await newOrder
