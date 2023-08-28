@@ -26,7 +26,7 @@ router.route("/add").post(async (requst, response) => {
 });
 
 
-// Get the details of the trainer that joined
+// Get the details of the equipments 
 router.route("/").get((req, res) => {
     Equipment
       .find()

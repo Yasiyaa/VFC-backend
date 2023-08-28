@@ -14,6 +14,12 @@ const trainerSchema = new Schema({
     },
     imagePath: {
         type: String
+    },
+    username: {
+        type: String
+    },
+    password:{
+        type: String
     }
 })
 

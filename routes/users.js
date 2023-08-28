@@ -5,13 +5,15 @@ const User = require("../models/user.js");
 // insert new doctor to the system
 
 router.route("/addNew").post(async (requst, response) => {
-  const { email, password } = requst.body;
+  const { email, password,name,telephone } = requst.body;
 
 
 
   const newUser = User({
     email,
     password,
+    name,
+    telephone
   });
 
   const add = await newUser
