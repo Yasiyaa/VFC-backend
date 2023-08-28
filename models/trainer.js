@@ -6,11 +6,11 @@ const trainerSchema = new Schema({
 
     name: {
         type: String,
-        required: true,
+      
     },
     about :{
         type: String,
-        required: true,
+      
     },
     imagePath: {
         type: String
